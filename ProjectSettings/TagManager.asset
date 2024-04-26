@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - Ground
+  - End
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
