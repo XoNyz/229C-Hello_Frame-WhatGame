@@ -9,10 +9,4 @@ public class EndControl : MonoBehaviour
    {
       SceneManager.LoadScene(sceneName);
    }
-
-   public void ExitGame()
-   {
-      Application.Quit();
-   }
-   
 }

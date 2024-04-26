@@ -38,11 +38,21 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
+
+        if (collision.gameObject.CompareTag("OneWayPlatform"))
+        {
+            isJumping = false;
+        }
     }
  
     private void OnCollisionExit2D(Collision2D collision) //*Exit
     {
         if (collision.gameObject.CompareTag("Ground"))
+        {
+            isJumping = true;
+        }
+
+        if (collision.gameObject.CompareTag("OneWayPlatform"))
         {
             isJumping = true;
         }
