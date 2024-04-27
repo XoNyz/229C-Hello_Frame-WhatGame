@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - End
   - OneWayPlatform
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
