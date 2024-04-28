@@ -20,7 +20,6 @@ public class EnemyXShooting : MonoBehaviour
     [SerializeField] private GameObject target;
     
     private Vector3 velocity, targetX, enemyX;
-    public Animation anim;
     
     // Start is called before the first frame update
     void Start()

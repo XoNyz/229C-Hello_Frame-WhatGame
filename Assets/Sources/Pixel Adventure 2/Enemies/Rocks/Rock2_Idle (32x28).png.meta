@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +108,384 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c4333466604b4c91f8a8fe87661eb
+      internalID: -291549310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f711b3539e181fe48b5f246a9f81040f
+      internalID: 524786459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3681fa4a35af9ec40a87f55ac8432dd3
+      internalID: -1571591528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3486b25115f60d143b251a7575f9b00a
+      internalID: 1961451006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea124ae049039774aa2fc9477269dd09
+      internalID: -991670249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94edfc711b07bdd4f90821ec5cffa5ae
+      internalID: 1933279850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a012ba8438fdd34d99d21f97afa31bf
+      internalID: -1120562204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce4b5371ab5c3419117e03cb82d099
+      internalID: -1252359275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec53a620bbe880745a511b430c5f7a42
+      internalID: 927122972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419bb9cd3d3963544b6c1d619fe88963
+      internalID: 2065264938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33292ee8af4663244bcd6a59425d35d2
+      internalID: 1085609917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b28a8081e031445a62d96c09d55890
+      internalID: 1239865771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -14}
+        - {x: 16, y: 14}
+        - {x: -16, y: 14}
+        - {x: -16, y: -14}
+      physicsShape:
+      - - {x: 0, y: -14}
+        - {x: 16, y: 0}
+        - {x: 0, y: 14}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4944b0e6e276b9e4f9bb2fffa05af3c6
+      internalID: 1883396499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +496,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rock2_Idle (32x28)_0: -291549310
+      Rock2_Idle (32x28)_1: 524786459
+      Rock2_Idle (32x28)_10: 1085609917
+      Rock2_Idle (32x28)_11: 1239865771
+      Rock2_Idle (32x28)_12: 1883396499
+      Rock2_Idle (32x28)_2: -1571591528
+      Rock2_Idle (32x28)_3: 1961451006
+      Rock2_Idle (32x28)_4: -991670249
+      Rock2_Idle (32x28)_5: 1933279850
+      Rock2_Idle (32x28)_6: -1120562204
+      Rock2_Idle (32x28)_7: -1252359275
+      Rock2_Idle (32x28)_8: 927122972
+      Rock2_Idle (32x28)_9: 2065264938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
