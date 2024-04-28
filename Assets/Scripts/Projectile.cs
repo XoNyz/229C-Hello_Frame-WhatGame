@@ -5,49 +5,34 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public GameObject enemy;
-    public GameObject target;
-
-    public float speed = 10f;
-
-    private float enemyX;
-    private float targetX;
-
-    private float dist;
-    private float nextX;
-    private float baseY;
-    private float height;
+    private Rigidbody2D rb2d;
+    private float timer;
     
     // Start is called before the first frame update
     void Start()
     {
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        target = GameObject.FindGameObjectWithTag("Player");
+        rb2d = GetComponent<Rigidbody2D>();
     }
     
     // Update is called once per frame
     void Update()
     {
-        enemyX = enemy.transform.position.x;
-        targetX = target.transform.position.x;
-
-        dist = targetX - enemyX;
-        nextX = Mathf.MoveTowards(transform.position.x, targetX, speed * Time.deltaTime);
-        baseY = Mathf.Lerp(enemy.transform.position.y, target.transform.position.y, (nextX - enemyX) / dist); //Realistic curve effect
-        height = 2 * (nextX - enemyX) * (nextX - targetX) / (-0.25f * dist * dist);
-
-        Vector3 movePosition = new Vector3(nextX, baseY + height, transform.position.z);
-        transform.rotation = LookAtTarget(movePosition - transform.position);
-        transform.position = movePosition;
+        float angle = Mathf.Atan2(rb2d.velocity.y, rb2d.velocity.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
-        if (transform.position == target.transform.position)
+        timer += Time.deltaTime;
+        if (timer > 7)
         {
             Destroy(gameObject);
         }
     }
-
-    public static Quaternion LookAtTarget(Vector2 rotation)
+    
+    void OnTriggerEnter2D(Collider2D other)
     {
-        return Quaternion.Euler(0, 0, Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().health -= 20;
+            Destroy(gameObject);
+        }
     }
 }

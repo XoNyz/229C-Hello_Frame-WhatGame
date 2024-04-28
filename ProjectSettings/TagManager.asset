@@ -10,6 +10,7 @@ TagManager:
   - OneWayPlatform
   - Bullet
   - Enemy
+  - Target
   layers:
   - Default
   - TransparentFX
