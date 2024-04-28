@@ -11,5 +11,10 @@ public class EndGame : MonoBehaviour
         {
             SceneManager.LoadScene("EndGame");
         }
+
+        if (collision.gameObject.CompareTag("Die"))
+        {
+            SceneManager.LoadScene("MainGame");
+        }
     }
 }

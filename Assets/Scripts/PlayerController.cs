@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
 
     [SerializeField] private bool isJumping;
-    private Animator anim;
+    public Animator anim;
+    bool facingRight = true;
     
     // Start is called before the first frame update
     void Start()
@@ -24,13 +25,34 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         moveX = Input.GetAxisRaw("Horizontal");
         rb2d.velocity = new Vector2(moveX * speed, rb2d.velocity.y);
+        
+        if (moveX >= 0.1f || moveX <= -0.1f)
+        {
+            anim.SetBool("IsRun", true);
+        }
+        else
+        {
+            anim.SetBool("IsRun", false);
+        }
 
+        if (moveX <= -0.1f && facingRight)
+        {
+            flip();
+        }
+        if (moveX >= 0.1f && !facingRight)
+        {
+            flip();
+        }
+        
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
             rb2d.AddForce(new Vector2(rb2d.velocity.x, jumpForce));
         }
+        
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision) //Check the collision of the block. *Enter
@@ -58,5 +80,10 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
     }
-    
+
+    void flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+    }
 }
