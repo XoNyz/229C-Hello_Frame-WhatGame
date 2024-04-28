@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
 
     [SerializeField] private bool isJumping;
+    private Animator anim;
     
     // Start is called before the first frame update
     void Start()
